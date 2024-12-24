@@ -1,7 +1,9 @@
-public class Mercedes_Benz_CLS_63_AMG extends Mercedes_Benz {
+package сar_lesson;
+
+public class MercedesBenzCLS63AMG extends MercedesBenz {
 
     public static void main(String[] args) {
-        Mercedes_Benz merc1 = new Mercedes_Benz();
+        MercedesBenz merc1 = new MercedesBenz();
         merc1.setColor("синий");
         merc1.setHorsePower(1200);
         merc1.setMotorPower(203);

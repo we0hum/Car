@@ -1,3 +1,5 @@
+package test_rectangle;
+
 public class triangle {
     public static void main(String[] args) {
         String sO = "*";
@@ -63,8 +65,8 @@ public class triangle {
 
 
 
-//public class triangle {
-//    public static void main(String[]args) {
+//public class test_rectangle.triangle {
+//    public static void test_rectangle.main(String[]args) {
 //        for (int i = 0; i < 8; i++) {
 //            for (int j = 8; j > i; j--) {
 //                System.out.print(" ");
@@ -82,8 +84,8 @@ public class triangle {
 
 
 
-//public class triangle {
-//    public static void main(String[] args) {
+//public class test_rectangle.triangle {
+//    public static void test_rectangle.main(String[] args) {
 //        for(int i = 8; i > 0; i--) {
 //            for (int j = 8 - i; j > 0; j--) {
 //                System.out.print(" ");

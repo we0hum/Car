@@ -1,11 +1,11 @@
-public class WhileTest {
+package test_rectangle;
+
+public class Test7 {
     public static void main(String[] args) {
-        int i = 900;
-        while (i >= 755) {
+        for (int i = 900; i >= 755; i--) {
             if (i % 7 == 0) {
                 System.out.print(i + " ");
             }
-            i --;
         }
     }
 }

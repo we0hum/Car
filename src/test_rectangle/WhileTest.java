@@ -1,9 +1,13 @@
-public class Test7 {
+package test_rectangle;
+
+public class WhileTest {
     public static void main(String[] args) {
-        for (int i = 900; i >= 755; i--) {
+        int i = 900;
+        while (i >= 755) {
             if (i % 7 == 0) {
                 System.out.print(i + " ");
             }
+            i --;
         }
     }
 }

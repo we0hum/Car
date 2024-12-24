@@ -1,3 +1,5 @@
+package сar_lesson;
+
 public class Car {
     private static final int WHEELS = 4;
     private int motorPower;

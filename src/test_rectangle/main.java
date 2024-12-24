@@ -1,3 +1,5 @@
+package test_rectangle;
+
 import java.util.Scanner;
 
 public class main {

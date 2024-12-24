@@ -1,11 +1,13 @@
-public class Mercedes_Benz extends Car {
-    private static final String BRAND = "Mercedes-Benz";
+package сar_lesson;
 
+public class Bmw extends Car {
+    private static final String BRAND = "BMW";
+    
     public String getBRAND () {
         return "Марка авто " + BRAND + ".";
     }
 
-    private static final String CEO = "Ола Каллениус";
+    private static final String CEO = "Оливер Ципсе";
 
     public String getCEO () {
         return "Генеральный директор компании " + BRAND + " является " + CEO + ".";

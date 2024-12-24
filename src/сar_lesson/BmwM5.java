@@ -1,7 +1,9 @@
-public class BMW_M5 extends BMW {
+package сar_lesson;
+
+public class BmwM5 extends Bmw {
 
     public static void main(String[] args) {
-        BMW bmw1 = new BMW();
+        Bmw bmw1 = new Bmw();
         bmw1.setColor("желтый");
         bmw1.setHorsePower(100);
         bmw1.setMotorPower(20);

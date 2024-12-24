@@ -1,3 +1,5 @@
+package test_rectangle;
+
 public class Test2 {
     int power(int a, int b) {
         int result = 0;

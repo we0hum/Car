@@ -1,4 +1,4 @@
-import org.w3c.dom.ls.LSOutput;
+package test_rectangle;
 
 public class Rectangle {
     public static void main(String[] args) {
