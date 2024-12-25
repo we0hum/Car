@@ -1,17 +1,10 @@
 package сar_lesson;
 
 public class RollsRoyce extends Car {
+    private String color;
+    private String nameModel;
     private static final String BRAND = "Rolls-Royce";
-
-    public String getBRAND () {
-        return "Марка авто " + BRAND + ".";
-    }
-
     private static final String CEO = "Крис Браунридж";
-
-    public String getCEO () {
-        return "Генеральный директор компании " + BRAND + " является " + CEO + ".";
-    }
 
     @Override
     String infoCEO() {
@@ -32,9 +25,6 @@ public class RollsRoyce extends Car {
         super.allInfo();
     }
 
-    private String color;
-    private String nameModel;
-
     public void setColor (String color) {
         this.color = color;
     }
@@ -53,5 +43,13 @@ public class RollsRoyce extends Car {
 
     public static void main(String[] args) {
 
+    }
+
+    public String getBRAND () {
+        return "Марка авто " + BRAND + ".";
+    }
+
+    public String getCEO () {
+        return "Генеральный директор компании " + BRAND + " является " + CEO + ".";
     }
 }

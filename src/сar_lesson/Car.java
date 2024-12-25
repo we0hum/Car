@@ -8,6 +8,22 @@ public class Car {
     private String gearBox;
     private int horsePower;
 
+
+    String infoCEO () {
+        return String.valueOf(WHEELS * getHorsePower());
+    }
+
+    void allInfo () {
+        System.out.println("Количество лошадиных сил " + getHorsePower());
+        System.out.println(getWHEELS());
+        System.out.println("Коробка передач у данной модели " + getGearBox());
+        System.out.println("Количество дверей у данной модели " + getDoors());
+    }
+
+    void infoMotor () {
+
+    }
+
     public String getWHEELS() {
         return "У машины " + WHEELS + " колеса.";
     }
@@ -45,20 +61,5 @@ public class Car {
     }
     public int getHorsePower () {
         return horsePower;
-    }
-
-    String infoCEO () {
-        return String.valueOf(WHEELS * getHorsePower());
-    }
-
-    void allInfo () {
-        System.out.println("Количество лошадиных сил " + getHorsePower());
-        System.out.println(getWHEELS());
-        System.out.println("Коробка передач у данной модели " + getGearBox());
-        System.out.println("Количество дверей у данной модели " + getDoors());
-    }
-
-    void infoMotor () {
-
     }
 }

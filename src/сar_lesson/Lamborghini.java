@@ -1,17 +1,10 @@
 package сar_lesson;
 
 public class Lamborghini extends Car {
+    private String color;
+    private String nameModel;
     private static final String BRAND = "сar_lesson.Lamborghini";
-
-    public String getBRAND () {
-        return "Марка авто " + BRAND + ".";
-    }
-
     private static final String CEO = "Штефан Винкельман";
-
-    public String getCEO () {
-        return "Генеральный директор компании " + BRAND + " является " + CEO + ".";
-    }
 
     @Override
     String infoCEO() {
@@ -32,9 +25,6 @@ public class Lamborghini extends Car {
         super.allInfo();
     }
 
-    private String color;
-    private String nameModel;
-
     public void setColor (String color) {
         this.color = color;
     }
@@ -54,4 +44,13 @@ public class Lamborghini extends Car {
     public static void main(String[] args) {
 
     }
+
+    public String getBRAND () {
+        return "Марка авто " + BRAND + ".";
+    }
+
+    public String getCEO () {
+        return "Генеральный директор компании " + BRAND + " является " + CEO + ".";
+    }
+
 }
