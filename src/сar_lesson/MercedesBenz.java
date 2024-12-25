@@ -6,6 +6,12 @@ public class MercedesBenz extends Car {
     private static final String BRAND = "Mercedes-Benz";
     private static final String CEO = "Ола Каллениус";
 
+    public MercedesBenz(int motorPower, String motor, int doors, String gearBox, int horsePower, String color, String nameModel) {
+        super(motorPower, motor, doors, gearBox, horsePower);
+        this.color = color;
+        this.nameModel = nameModel;
+    }
+
     @Override
     String infoCEO() {
         return String.valueOf(super.infoCEO() + " " + getCEO());

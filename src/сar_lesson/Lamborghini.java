@@ -6,6 +6,12 @@ public class Lamborghini extends Car {
     private static final String BRAND = "сar_lesson.Lamborghini";
     private static final String CEO = "Штефан Винкельман";
 
+    public Lamborghini(int motorPower, String motor, int doors, String gearBox, int horsePower, String color, String nameModel) {
+        super(motorPower, motor, doors, gearBox, horsePower);
+        this.color = color;
+        this.nameModel = nameModel;
+    }
+
     @Override
     String infoCEO() {
         return String.valueOf(super.infoCEO() + " " + getCEO());
