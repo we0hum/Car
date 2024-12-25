@@ -6,6 +6,12 @@ public class RollsRoyce extends Car {
     private static final String BRAND = "Rolls-Royce";
     private static final String CEO = "Крис Браунридж";
 
+    public RollsRoyce(int motorPower, String motor, int doors, String gearBox, int horsePower, String color, String nameModel) {
+        super(motorPower, motor, doors, gearBox, horsePower);
+        this.color = color;
+        this.nameModel = nameModel;
+    }
+
     @Override
     String infoCEO() {
         return String.valueOf(super.infoCEO() + " " + getCEO());

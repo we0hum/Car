@@ -8,6 +8,13 @@ public class Car {
     private String gearBox;
     private int horsePower;
 
+    public Car (int motorPower, String motor, int doors, String gearBox, int horsePower) {
+        this.motorPower = motorPower;
+        this.motor = motor;
+        this.doors = doors;
+        this.gearBox = gearBox;
+        this.horsePower = horsePower;
+    }
 
     String infoCEO () {
         return String.valueOf(WHEELS * getHorsePower());
