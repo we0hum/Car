@@ -1,6 +1,6 @@
 package сar_lesson;
 
-public class Test {
+public class Main {
     public static void main(String[] args) {
         Bmw bmw1 = new Bmw(20, "b43",  4, "АКПП", 300, "желтый", "M5");
         bmw1.allInfo();
