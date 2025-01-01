@@ -47,10 +47,6 @@ public class Lamborghini extends Car {
         return nameModel;
     }
 
-    public static void main(String[] args) {
-
-    }
-
     public String getBRAND () {
         return "Марка авто " + BRAND + ".";
     }
