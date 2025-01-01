@@ -13,6 +13,7 @@ public class Bmw extends Car {
     }
 
     public Bmw() {
+        super();
         this.color = "Значение отсутствует";
         this.nameModel = "Значение отсутствует";
     }
