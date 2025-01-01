@@ -12,6 +12,29 @@ public class MercedesBenz extends Car {
         this.nameModel = nameModel;
     }
 
+    public MercedesBenz() {
+        this.color = "Значение отсутствует";
+        this.nameModel = "Значение отсутствует";
+    }
+
+    public MercedesBenz(int motorPower, String motor, int doors, String gearBox, int horsePower, String nameModel) {
+        super(motorPower, motor, doors, gearBox, horsePower);
+        this.color = "Значение отсутствует";
+        this.nameModel = nameModel;
+    }
+
+    public MercedesBenz(int motorPower, String motor, int doors, String gearBox, String color, int horsePower) {
+        super(motorPower, motor, doors, gearBox, horsePower);
+        this.color = color;
+        this.nameModel = "Значение отсутствует";
+    }
+
+    public MercedesBenz(int motorPower, String motor, int doors, String gearBox, int horsePower) {
+        super(motorPower, motor, doors, gearBox, horsePower);
+        this.color = "Значение отсутствует";
+        this.nameModel = "Значение отсутствует";
+    }
+
     @Override
     String infoCEO() {
         return String.valueOf(super.infoCEO() + " " + getCEO());
@@ -19,7 +42,7 @@ public class MercedesBenz extends Car {
 
     @Override
     void infoMotor() {
-        System.out.println("У этой модели стоит модель двигателя " + getMotor() + " и его мощность равна " + getMotorPower());
+        super.infoMotor();
     }
 
     @Override

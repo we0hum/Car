@@ -12,6 +12,59 @@ public class Bmw extends Car {
         this.nameModel = nameModel;
     }
 
+    public Bmw() {
+        this.color = "Значение отсутствует";
+        this.nameModel = "Значение отсутствует";
+    }
+
+    public Bmw(int motorPower, String motor, int doors, String gearBox, int horsePower, String nameModel) {
+        super(motorPower, motor, doors, gearBox, horsePower);
+        this.color = "Значение отсутствует";
+        this.nameModel = nameModel;
+    }
+
+    public Bmw(int motorPower, String motor, int doors, String gearBox, String color, int horsePower) {
+        super(motorPower, motor, doors, gearBox, horsePower);
+        this.color = color;
+        this.nameModel = "Значение отсутствует";
+    }
+
+    public Bmw(int motorPower, String motor, int doors, String gearBox, int horsePower) {
+        super(motorPower, motor, doors, gearBox, horsePower);
+        this.color = "Значение отсутствует";
+        this.nameModel = "Значение отсутствует";
+    }
+
+    public Bmw(int motorPower, String motor, int doors, int horsePower, String color, String nameModel) {
+        super(motorPower, motor, doors, horsePower);
+        this.color = color;
+        this.nameModel = nameModel;
+    }
+
+    public Bmw(int motorPower, String motor, String gearBox, int horsePower, String color, String nameModel) {
+        super(motorPower, motor, horsePower, gearBox);
+        this.color = color;
+        this.nameModel = nameModel;
+    }
+
+    public Bmw(int motorPower, int doors, String gearBox, int horsePower, String color, String nameModel) {
+        super(motorPower, doors, gearBox, horsePower);
+        this.color = color;
+        this.nameModel = nameModel;
+    }
+
+    public Bmw(String motor, int doors, String gearBox, int horsePower, String color, String nameModel) {
+        super(motor, doors, gearBox, horsePower);
+        this.color = color;
+        this.nameModel = nameModel;
+    }
+    public Bmw(int motorPower, String motor, int doors, String gearBox, String color, String nameModel) {
+        super(motorPower, motor, doors, gearBox);
+        this.color = color;
+        this.nameModel = nameModel;
+    }
+
+
     @Override
     String infoCEO() {
         return String.valueOf(super.infoCEO() + " " + getCEO());
@@ -19,14 +72,14 @@ public class Bmw extends Car {
 
     @Override
     void infoMotor() {
-        System.out.println("У этой модели стоит модель двигателя " + getMotor() + " и его мощность равна " + getMotorPower());
+        super.infoMotor();
     }
 
     @Override
     void allInfo () {
         System.out.println(getCEO());
-        System.out.println("Цвет модели " + getColor());
-        System.out.println("Название модели " + getNameModel());
+        System.out.println("Цвет модели: " + getColor());
+        System.out.println("Название модели: " + getNameModel());
         infoMotor();
         super.allInfo();
     }

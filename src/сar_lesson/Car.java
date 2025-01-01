@@ -16,19 +16,68 @@ public class Car {
         this.horsePower = horsePower;
     }
 
+    public Car () {
+        this.motorPower = 0;
+        this.motor = "Значение отсутствует";
+        this.doors = 0;
+        this.gearBox = "Значение отсутствует";
+        this.horsePower = 0;
+    }
+
+    public Car (int motorPower, String motor, int doors, int horsePower) {
+        this.motorPower = motorPower;
+        this.motor = motor;
+        this.doors = doors;
+        this.gearBox = "Значение отсутствует";
+        this.horsePower = horsePower;
+    }
+
+    public Car (int motorPower, String motor, String gearBox, int horsePower) {
+        this.motorPower = motorPower;
+        this.motor = motor;
+        this.doors = 0;
+        this.gearBox = gearBox;
+        this.horsePower = horsePower;
+    }
+
+    public Car (int motorPower, int doors, String gearBox, int horsePower) {
+        this.motorPower = motorPower;
+        this.motor = "Значение отсутствует";
+        this.doors = doors;
+        this.gearBox = gearBox;
+        this.horsePower = horsePower;
+    }
+
+    public Car (String motor, int doors, String gearBox, int horsePower) {
+        this.motorPower = 0;
+        this.motor = motor;
+        this.doors = doors;
+        this.gearBox = gearBox;
+        this.horsePower = horsePower;
+    }
+
+    public Car (int motorPower, String motor, int doors, String gearBox) {
+        this.motorPower = motorPower;
+        this.motor = motor;
+        this.doors = doors;
+        this.gearBox = gearBox;
+        this.horsePower = 0;
+    }
+
+
     String infoCEO () {
         return String.valueOf(WHEELS * getHorsePower());
     }
 
     void allInfo () {
-        System.out.println("Количество лошадиных сил " + getHorsePower());
+        System.out.println("Количество лошадиных сил: " + getHorsePower());
         System.out.println(getWHEELS());
-        System.out.println("Коробка передач у данной модели " + getGearBox());
-        System.out.println("Количество дверей у данной модели " + getDoors());
+        System.out.println("Коробка передач у данной модели: " + getGearBox());
+        System.out.println("Количество дверей у данной модели: " + getDoors());
     }
 
     void infoMotor () {
-
+        System.out.println("У этой модели стоит модель двигателя: " + getMotor() + ", и его мощность равна " + getMotorPower());
     }
 
     public String getWHEELS() {
