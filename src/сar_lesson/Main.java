@@ -2,12 +2,10 @@ package сar_lesson;
 
 public class Main {
     public static void main(String[] args) {
-        Bmw bmw1 = new Bmw(20, "b43",  4, "АКПП", 300, "желтый", "M5");
+        Bmw bmw1 = new Bmw();
         bmw1.allInfo();
 
-        System.out.println();
-
-        MercedesBenz merc = new MercedesBenz(50, "b43685",  5, "АКПП", 200, "черный", "cls63");
+        MercedesBenz merc = new MercedesBenz(100, "b413", 4, "akpp", 500, "yellow", "cls63");
         merc.allInfo();
     }
 }

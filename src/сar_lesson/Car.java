@@ -1,6 +1,6 @@
 package сar_lesson;
 
-public class Car {
+public abstract class Car {
     private static final int WHEELS = 4;
     private int motorPower;
     private String motor;
@@ -16,19 +16,28 @@ public class Car {
         this.horsePower = horsePower;
     }
 
+    public Car () {
+        this.motorPower = 0;
+        this.motor = "Значение отсутствует";
+        this.doors = 0;
+        this.gearBox = "Значение отсутствует";
+        this.horsePower = 0;
+    }
+
+
     String infoCEO () {
         return String.valueOf(WHEELS * getHorsePower());
     }
 
     void allInfo () {
-        System.out.println("Количество лошадиных сил " + getHorsePower());
+        System.out.println("Количество лошадиных сил: " + getHorsePower());
         System.out.println(getWHEELS());
-        System.out.println("Коробка передач у данной модели " + getGearBox());
-        System.out.println("Количество дверей у данной модели " + getDoors());
+        System.out.println("Коробка передач у данной модели: " + getGearBox());
+        System.out.println("Количество дверей у данной модели: " + getDoors() + "\n");
     }
 
     void infoMotor () {
-
+        System.out.println("У этой модели стоит модель двигателя: " + getMotor() + ", и его мощность равна " + getMotorPower());
     }
 
     public String getWHEELS() {

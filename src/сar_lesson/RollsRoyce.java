@@ -12,6 +12,13 @@ public class RollsRoyce extends Car {
         this.nameModel = nameModel;
     }
 
+    public RollsRoyce() {
+        super();
+        this.color = "Значение отсутствует";
+        this.nameModel = "Значение отсутствует";
+    }
+
+
     @Override
     String infoCEO() {
         return String.valueOf(super.infoCEO() + " " + getCEO());
@@ -19,7 +26,7 @@ public class RollsRoyce extends Car {
 
     @Override
     void infoMotor() {
-        System.out.println("У этой модели стоит модель двигателя " + getMotor() + " и его мощность равна " + getMotorPower());
+        super.infoMotor();
     }
 
     @Override
