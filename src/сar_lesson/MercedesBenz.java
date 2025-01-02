@@ -13,24 +13,7 @@ public class MercedesBenz extends Car {
     }
 
     public MercedesBenz() {
-        this.color = "Значение отсутствует";
-        this.nameModel = "Значение отсутствует";
-    }
-
-    public MercedesBenz(int motorPower, String motor, int doors, String gearBox, int horsePower, String nameModel) {
-        super(motorPower, motor, doors, gearBox, horsePower);
-        this.color = "Значение отсутствует";
-        this.nameModel = nameModel;
-    }
-
-    public MercedesBenz(int motorPower, String motor, int doors, String gearBox, String color, int horsePower) {
-        super(motorPower, motor, doors, gearBox, horsePower);
-        this.color = color;
-        this.nameModel = "Значение отсутствует";
-    }
-
-    public MercedesBenz(int motorPower, String motor, int doors, String gearBox, int horsePower) {
-        super(motorPower, motor, doors, gearBox, horsePower);
+        super();
         this.color = "Значение отсутствует";
         this.nameModel = "Значение отсутствует";
     }

@@ -24,46 +24,6 @@ public abstract class Car {
         this.horsePower = 0;
     }
 
-    public Car (int motorPower, String motor, int doors, int horsePower) {
-        this.motorPower = motorPower;
-        this.motor = motor;
-        this.doors = doors;
-        this.gearBox = "Значение отсутствует";
-        this.horsePower = horsePower;
-    }
-
-    public Car (int motorPower, String motor, String gearBox, int horsePower) {
-        this.motorPower = motorPower;
-        this.motor = motor;
-        this.doors = 0;
-        this.gearBox = gearBox;
-        this.horsePower = horsePower;
-    }
-
-    public Car (int motorPower, int doors, String gearBox, int horsePower) {
-        this.motorPower = motorPower;
-        this.motor = "Значение отсутствует";
-        this.doors = doors;
-        this.gearBox = gearBox;
-        this.horsePower = horsePower;
-    }
-
-    public Car (String motor, int doors, String gearBox, int horsePower) {
-        this.motorPower = 0;
-        this.motor = motor;
-        this.doors = doors;
-        this.gearBox = gearBox;
-        this.horsePower = horsePower;
-    }
-
-    public Car (int motorPower, String motor, int doors, String gearBox) {
-        this.motorPower = motorPower;
-        this.motor = motor;
-        this.doors = doors;
-        this.gearBox = gearBox;
-        this.horsePower = 0;
-    }
-
 
     String infoCEO () {
         return String.valueOf(WHEELS * getHorsePower());

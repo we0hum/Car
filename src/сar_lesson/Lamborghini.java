@@ -13,27 +13,11 @@ public class Lamborghini extends Car {
     }
 
     public Lamborghini() {
+        super();
         this.color = "Значение отсутствует";
         this.nameModel = "Значение отсутствует";
     }
 
-    public Lamborghini(int motorPower, String motor, int doors, String gearBox, int horsePower, String nameModel) {
-        super(motorPower, motor, doors, gearBox, horsePower);
-        this.color = "Значение отсутствует";
-        this.nameModel = nameModel;
-    }
-
-    public Lamborghini(int motorPower, String motor, int doors, String gearBox, String color, int horsePower) {
-        super(motorPower, motor, doors, gearBox, horsePower);
-        this.color = color;
-        this.nameModel = "Значение отсутствует";
-    }
-
-    public Lamborghini(int motorPower, String motor, int doors, String gearBox, int horsePower) {
-        super(motorPower, motor, doors, gearBox, horsePower);
-        this.color = "Значение отсутствует";
-        this.nameModel = "Значение отсутствует";
-    }
 
     @Override
     String infoCEO() {
