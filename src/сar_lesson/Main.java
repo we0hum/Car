@@ -5,9 +5,7 @@ public class Main {
         Bmw bmw1 = new Bmw();
         bmw1.allInfo();
 
-//        System.out.println();
-//
-//        MercedesBenz merc = new MercedesBenz();
-//        merc.allInfo();
+        MercedesBenz merc = new MercedesBenz(100, "b413", 4, "akpp", 500, "yellow", "cls63");
+        merc.allInfo();
     }
 }
