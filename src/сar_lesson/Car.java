@@ -1,7 +1,7 @@
 package сar_lesson;
 
 public class Car {
-    private static final int WHEELS = 4;
+    private final int WHEELS = 4;
     private int motorPower;
     private String motor;
     private int doors;
@@ -24,7 +24,7 @@ public class Car {
         System.out.println("Количество лошадиных сил " + getHorsePower());
         System.out.println(getWHEELS());
         System.out.println("Коробка передач у данной модели " + getGearBox());
-        System.out.println("Количество дверей у данной модели " + getDoors());
+        System.out.println("Количество дверей у данной модели " + getDoors()+ "\n");
     }
 
     void infoMotor () {
