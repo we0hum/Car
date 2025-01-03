@@ -1,4 +1,4 @@
-package book;
+package book.stack;
 
 public class TestStack2 {
     public static void main(String[] args) {

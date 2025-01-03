@@ -1,4 +1,4 @@
-package book;
+package book.stack;
 
 public class Stack implements IntStack{
     private int[] stck;

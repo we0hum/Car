@@ -1,4 +1,4 @@
-package book;
+package book.stack;
 
 public class DynStack implements IntStack {
     private int[] stck;
