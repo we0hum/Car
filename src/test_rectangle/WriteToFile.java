@@ -25,7 +25,7 @@ public class WriteToFile {
             br = new BufferedReader(new FileReader("TestWriteToFile"));
             String line;
             int a = 1;
-            if (a != 0) {
+            if (true) {
                 while ((line = br.readLine()) != null) {
                     System.out.print("Значение " + a + " равно: ");
                     System.out.println(line);
