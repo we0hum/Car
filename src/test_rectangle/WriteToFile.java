@@ -25,12 +25,10 @@ public class WriteToFile {
             br = new BufferedReader(new FileReader("TestWriteToFile"));
             String line;
             int a = 1;
-            if (true) {
                 while ((line = br.readLine()) != null) {
                     System.out.print("Значение " + a + " равно: ");
                     System.out.println(line);
                     a++;
-                }
             }
         }
         catch (IOException e) {
