@@ -3,7 +3,7 @@ package сar_lesson;
 public class Lamborghini extends Car {
     private String color;
     private String nameModel;
-    private static final String BRAND = "сar_lesson.Lamborghini";
+    private static final String BRAND = "Lamborghini";
     private static final String CEO = "Штефан Винкельман";
 
     public Lamborghini(int motorPower, String motor, int doors, String gearBox, int horsePower, String color, String nameModel) {
@@ -17,7 +17,6 @@ public class Lamborghini extends Car {
         this.color = "Значение отсутствует";
         this.nameModel = "Значение отсутствует";
     }
-
 
     @Override
     String infoCEO() {

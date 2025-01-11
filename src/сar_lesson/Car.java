@@ -24,7 +24,6 @@ public abstract class Car {
         this.horsePower = 0;
     }
 
-
     String infoCEO () {
         return String.valueOf(WHEELS * getHorsePower());
     }

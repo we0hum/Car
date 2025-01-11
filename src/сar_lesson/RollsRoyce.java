@@ -18,7 +18,6 @@ public class RollsRoyce extends Car {
         this.nameModel = "Значение отсутствует";
     }
 
-
     @Override
     String infoCEO() {
         return String.valueOf(super.infoCEO() + " " + getCEO());
