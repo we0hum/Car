@@ -3,13 +3,19 @@ package сar_lesson;
 public class Lamborghini extends Car {
     private String color;
     private String nameModel;
-    private static final String BRAND = "сar_lesson.Lamborghini";
+    private static final String BRAND = "Lamborghini";
     private static final String CEO = "Штефан Винкельман";
 
     public Lamborghini(int motorPower, String motor, int doors, String gearBox, int horsePower, String color, String nameModel) {
         super(motorPower, motor, doors, gearBox, horsePower);
         this.color = color;
         this.nameModel = nameModel;
+    }
+
+    public Lamborghini() {
+        super();
+        this.color = "Значение отсутствует";
+        this.nameModel = "Значение отсутствует";
     }
 
     @Override
@@ -19,7 +25,7 @@ public class Lamborghini extends Car {
 
     @Override
     void infoMotor() {
-        System.out.println("У этой модели стоит модель двигателя " + getMotor() + " и его мощность равна " + getMotorPower());
+        super.infoMotor();
     }
 
     @Override

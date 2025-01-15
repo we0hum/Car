@@ -12,6 +12,12 @@ public class Bmw extends Car {
         this.nameModel = nameModel;
     }
 
+    public Bmw() {
+        super();
+        this.color = "Значение отсутствует";
+        this.nameModel = "Значение отсутствует";
+    }
+
     @Override
     String infoCEO() {
         return String.valueOf(super.infoCEO() + " " + getCEO());
@@ -19,14 +25,14 @@ public class Bmw extends Car {
 
     @Override
     void infoMotor() {
-        System.out.println("У этой модели стоит модель двигателя " + getMotor() + " и его мощность равна " + getMotorPower());
+        super.infoMotor();
     }
 
     @Override
     void allInfo () {
         System.out.println(getCEO());
-        System.out.println("Цвет модели " + getColor());
-        System.out.println("Название модели " + getNameModel());
+        System.out.println("Цвет модели: " + getColor());
+        System.out.println("Название модели: " + getNameModel());
         infoMotor();
         super.allInfo();
     }
