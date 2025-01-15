@@ -1,6 +1,6 @@
 package сar_lesson;
 
-public class Car {
+public abstract class Car {
     private final int WHEELS = 4;
     private int motorPower;
     private String motor;
