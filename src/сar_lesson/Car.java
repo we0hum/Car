@@ -23,8 +23,8 @@ public abstract class Car {
     void allInfo () {
         System.out.println("Количество лошадиных сил " + getHorsePower());
         System.out.println(getWHEELS());
-        System.out.println("Коробка передач у данной модели " + getGearBox());
-        System.out.println("Количество дверей у данной модели " + getDoors()+ "\n");
+        System.out.println("Коробка передач у данной модели: " + getGearBox());
+        System.out.println("Количество дверей у данной модели: " + getDoors() + "\n");
     }
 
     void infoMotor () {
