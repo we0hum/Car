@@ -6,7 +6,7 @@ public class MercedesBenz extends Car {
     private static final String BRAND = "Mercedes-Benz";
     private static final String CEO = "Ола Каллениус";
 
-    public MercedesBenz(int doors, String gearBox, String color, String nameModel) {
+    public MercedesBenz(int doors, String gearBox, String color, String nameModel, Engine engine) {
         super(doors, gearBox, new Car.Engine());
         this.color = color;
         this.nameModel = nameModel;

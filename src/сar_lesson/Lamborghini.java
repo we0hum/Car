@@ -7,7 +7,7 @@ public class Lamborghini extends Car {
     private static final String CEO = "Штефан Винкельман";
 
     public Lamborghini(int doors, String gearBox, String color, String nameModel) {
-        super(doors, gearBox, new Engine());
+        super(doors, gearBox, new Car.Engine());
         this.color = color;
         this.nameModel = nameModel;
     }
