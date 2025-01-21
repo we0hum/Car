@@ -14,6 +14,7 @@ public abstract class Car {
     }
 
     public Car () {
+        this.engine = new Engine();
         this.doors = 0;
         this.gearBox = "Значение отсутствует";
     }
@@ -62,8 +63,6 @@ public abstract class Car {
             this.motor = motor;
             this.motorPower = motorPower;
             this.horsePower = horsePower;
-
-
         }
 
         public Engine() {

@@ -6,8 +6,8 @@ public class RollsRoyce extends Car {
     private static final String BRAND = "Rolls-Royce";
     private static final String CEO = "Крис Браунридж";
 
-    public RollsRoyce(int motorPower, String motor, int doors, String gearBox, int horsePower, String color, String nameModel) {
-        super(motorPower, motor, doors, gearBox, horsePower);
+    public RollsRoyce(int doors, String gearBox, String color, String nameModel) {
+        super(doors, gearBox, new Engine());
         this.color = color;
         this.nameModel = nameModel;
     }
