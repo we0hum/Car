@@ -5,7 +5,7 @@ public abstract class Car {
     private String gearBox;
     private int doors;
 
-    Engine engine = new Engine();
+    Engine engine;
 
     public Car (int doors, String gearBox, Engine engine) {
         this.engine = engine;
@@ -51,8 +51,6 @@ public abstract class Car {
     public String getGearBox () {
         return gearBox;
     }
-
-
 
     static class Engine {
         private int motorPower;
